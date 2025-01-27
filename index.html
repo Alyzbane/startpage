@@ -2,11 +2,12 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>△ Home</title>
-    <link rel="shortcut icon" href="src/icons/elaina_bread.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="src/icons/elaina_bread.png">
+    <link rel="shortcut icon" href="static/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/icons/favicon-16.png">
     <style>
+        
         :root {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -17,7 +18,7 @@
             align-items: center;
             display: flex;
             height: 100%;
-            font: 22px "IBM Plex Mono", Courier, monospace;
+            font: 24px "IBM Plex Mono", Courier, monospace; /* Increased font size */
             background-color: #F3F7FA;
             justify-content: center;
             margin: 0;
@@ -30,7 +31,7 @@
         }
 
         .search-div {
-            font-size: 2em;
+            font-size: 2.5em; /* Increased font size */
             grid-column: 1 / -1;
             margin: 0;
             padding-top: 1vw;
@@ -98,7 +99,7 @@
         li:first-child {
             color: #3c6e9a;
             font-weight: bold;
-            line-height: 2em;
+            line-height: 2.5em; /* Increased line height */
         }
 
         li {
@@ -112,34 +113,35 @@
             object-position: 50% 100%;
             width: 8em;
         }
+
     </style>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li>総 (そう</li>
+            <li>総そう</li>
             <li><a href="https://boards.4channel.org/a/catalog" data-image="1.png">/a/</a></li>
             <li><a href="https://boards.4channel.org/g/catalog" data-image="2.png">/g/</a></li>
-            <li><a href="https://boards.4channel.org/vg/impact" data-image="3.png">/vg/</a></li>
+            <li><a href="https://boards.4channel.org/vg/catalog" data-image="3.png">/vg/</a></li>
         </ul>
         <ul>
             <li>????</li>
             <li><a href="https://nyaa.si/" data-image="4.png">nyaa</a></li>
-            <li><a href="https://sukebei.nyaa.si/" data-image="5.png">sknyaa</a></li>
             <li><a href="https://danbooru.donmai.us/" data-image="6.png">boru</a></li>
+            <li><a href="https://animekai.to/home" data-image="8.png">－O－</a></li>
         </ul>
         <ul>
             <li>Ulap</li>
             <li><a href="https://mega.nz/" data-image="7.png">mega</a></li>
-            <li><a href="https://drive.google.com/drive/my-drive" data-image="8.png">gdrive</a></li>
-            <li><a href="https://keep.google.com/u/1/" data-image="9.png">notes</a></li>
+            <li><a href="https://gmgn.ai/meme?chain=sol" data-image="9.png">dex</a></li>
+            <li><a href="https://jup.ag/" data-image="5.png">trade</a></li>
         </ul>
         <ul>
             <li>...</li>
+            <li><a href="https://x.com" data-image="11.png">X</a></li>
             <li><a href="https://github.com/" data-image="10.png">github</a></li>
-            <li><a href="https://www.facebook.com" data-image="11.png">facebook</a></li>
-            <li><a href="https://www.youtube.com" data-image="12.png">youtube</a></li>
+            <li><a href="https://youtube.com" data-image="12.png">youtube</a></li>
             <li><a href=""></a></li>
         </ul>
         <div class="search-div">
@@ -147,9 +149,9 @@
             <input autofocus id="searchbox" name="q" type="text" placeholder="けんさくする..."></input>
         </div>
     </nav>
-    <img src="src/default.png" class="sidebar" id="default-image">
-    <script src="search.js" type="text/javascript"></script>
-    <script src="hover.js"></script>
+    <img src="static/images/default.png" class="sidebar" id="default-image">
+    <script src="static/js/search.js" type="text/javascript"></script>
+    <script src="static/js/hover.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -19,21 +19,18 @@ function search(query) {
             window.location = "http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=" +
                 query.replaceChars(" ", "+");
             break;
-
         case "-y":
             query = query.substr(3);
             window.location =
                 "https://www.youtube.com/results?search_query=" +
                 query.replaceChars(" ", "+");
             break;
-
         case "-w":
             query = query.substr(3);
             window.location =
                 "https://en.wikipedia.org/w/index.php?search=" +
                 query.replaceChars(" ", "%20");
             break;
-
         case "-m":
             query = query.substr(3);
             window.location =
@@ -43,7 +40,7 @@ function search(query) {
         case "-d":
             query = query.substr(3);
             window.location =
-            "https://gelbooru.com/index.php?page=post&s=list&tags=" +
+            "https://dexscreener.com/search?q=" +
             query.replaceChars("+", "%2B");
             break;
         case "-n":
@@ -64,18 +61,18 @@ function search(query) {
                 "https://shopee.ph/search?keyword=" +
                 query.replaceChars("+", "%2B");
             break;
-	case "-x":
+    	case "-g":
             query = query.substr(3);
             window.location =
-		"https://x.com/search?q=" +
+		        "https://www.google.com/search?q=" +
                 query.replaceChars("+", "%2B");
             break;
-        //        case "-4":
-        //           query = query.substr(3);
-        //           window.location =
-        //              "http://boards.4chan.org/" +
-        //               query.replaceChars(" ", "%20");
-        //            break;
+    	case "-x":
+            query = query.substr(3);
+            window.location =
+		        "https://x.com/search?q=" +
+                query.replaceChars("+", "%2B");
+            break;
         case "-h":
             query = query.substr(3);
             if (query.length == 0 || !query) {
@@ -87,7 +84,7 @@ function search(query) {
             query.replaceChars("+", "%2B");
             break;
         default:
-            window.location = "https://www.google.com/search?q=" +
+            window.location = "https://search.brave.com/search?q=" +
                 query.replaceChars(" ", "+");
     }
 }
@@ -108,21 +105,3 @@ window.onload = function () {
     // jump to search when tab is pressed
     var search_sqr = document.getElementById("search_sqr");
 }
-//
-// To add a new search provider, paste the following between the last "break;" and "default:" (Line 39 & 40)
-//
-//         case "-a":
-//          query = query.substr(3);
-//          window.location =
-//             "https://en.website.com/" +
-//             query.replaceChars(" ", "%20");
-//          break;
-//
-// -a on ln68 should be replaced with a "-letter" of your choice. You can also change it to !a, .a, /a etc.
-// https://en.website.com/ on ln70 should be replaced with the search page of the website. To find this, make a few searches on your website.
-//Try to identify where your search is in the URL. If you're not sure, post in the thread and someone should help you out
-//
-// You can use the above two to modify an existing rule
-//
-// If you wish to change the number of characters in a "case", you need to change the line below, changing query.substr() to n+1, n being the number of characters.
-// This ensures that when you search for something, the whole of your idenfier and the space between the identifier and query are removed.
