@@ -14,11 +14,12 @@ New folder/Project/HTML and CSS/startpage/
     ├── icons
     ├── images
     │   ├── 1.png # Replace images here
-    |   |── ..... 
+    |   |── ... 
     │   └── default.png
     └── js
-        ├── hover.js  # Hovering to list will change the image
+        ├── hover-image.js  # Hovering to list will change the image from links found in github gist
         └── search.js # Add command search here
+        └── ...
 ```
 
 ## Files
